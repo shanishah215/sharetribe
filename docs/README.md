@@ -72,6 +72,10 @@ This guide shows how to write fast RSpec tests without requiring Rails environme
 
 This guide shows how upgrade the Facebook SDK version
 
+#### [Using Fakepal](./using-fakepal.md)
+
+This guide shows how to use "Fakepal", which is a fake PayPal implementation that can be used for development purposes
+
 ## Process documentation
 
 Documentation of the development process.
