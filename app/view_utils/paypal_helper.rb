@@ -69,15 +69,16 @@ module PaypalHelper
   # This is different from PayPal being active. Provisioned just means
   # that admin can configure and activate PayPal.
   def paypal_provisioned?(community_id)
-    settings = Maybe(TxApi.settings.get(
-                      community_id: community_id,
-                      payment_gateway: :paypal,
-                      payment_process: :preauthorize))
-      .select { |result| result[:success] }
-      .map { |result| result[:data] }
-      .or_else(nil)
+    # settings = Maybe(TxApi.settings.get(
+    #                   community_id: community_id,
+    #                   payment_gateway: :paypal,
+    #                   payment_process: :preauthorize))
+    #   .select { |result| result[:success] }
+    #   .map { |result| result[:data] }
+    #   .or_else(nil)
 
-    return !!settings
+    # return !!settings
+    true #Paypal is always active
   end
 
   # Check if the user has open listings in the community but has not

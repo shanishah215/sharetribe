@@ -132,6 +132,11 @@ class Admin::PaypalPreferencesController < ApplicationController
         callback_url: admin_paypal_preferences_permissions_verified_url,
         country: community_country_code
       }))
+
+    puts '***'*100
+    puts response.inspect
+    puts '***'*100
+    
     permissions_url = response.data[:redirect_url]
 
     if permissions_url.blank?

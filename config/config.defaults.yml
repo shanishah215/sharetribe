@@ -101,9 +101,9 @@ default: &default_settings
   aws_ses_sns_topic:
 
   # Paypal credentials for the platform owner.
-  paypal_username: xxxxxxxxxxxxx
-  paypal_password: xxxxxxxxxxxxx
-  paypal_signature: xxxxxxxxxxxxx
+  paypal_username: quinnamcnamara_api1.gmail.com
+  paypal_password: QYJQDSXAW7UNNX3J
+  paypal_signature: AFcWxV21C7fd0v3bYYYRCpSSRl31A.dl7Tp0zHXzakPUf6gqwqzBmyp0
   paypal_partner_id: xxxxxxxxxxxxx # payerID for paypal platform owner account
   paypal_app_id: APP-80W284485P519543T # Global test id
   paypal_button_source: # Unique value given to you by your PayPal contact
