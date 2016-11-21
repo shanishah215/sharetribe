@@ -81,3 +81,4 @@ Kassi::Application.configure do
 
   config.cache_store = :memory_store, { :namespace => "sharetribe-dev"}
 end
+ActiveMerchant::Billing::Base.mode = :test

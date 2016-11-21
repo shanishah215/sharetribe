@@ -118,6 +118,11 @@ Kassi::Application.routes.draw do
     get "/transactions/created/:transaction_id" => "transactions#created", as: :transaction_created
     get "/transactions/finalize_processed/:process_token" => "transactions#finalize_processed", as: :transaction_finalize_processed
 
+    
+
+    get "/payments/charge" => "payments#checkout", as: :payments_charge
+    get "/payments/return_of_paypal" => "payments#return_of_paypal", as: :return_of_paypal
+    
     # All new transactions (in the future)
     get "/transactions/new" => "transactions#new", as: :new_transaction
 
